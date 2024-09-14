@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-team/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    
+    <script type="module" crossorigin src="/vanilla-team/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-team/assets/vendor-c65b4e60.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-team/assets/filtersHandlers-5dd9198a.js">
+    <link rel="stylesheet" href="/vanilla-team/assets/filtersHandlers-93c14d28.css">
+  </head>
+  <body>
+    <header>
+  <div class="container header">
+    <!-- <nav class="header-nav"> -->
+    <a href="./index.html" class="header-logo-a"
+      ><img
+        class="header-logo-img"
+        src="/vanilla-team/assets/logo-1547d4b3.svg"
+        alt="YOUR ENERGY LOGO"
+        width="132"
+        height="24"
+    /></a>
+
+    <!-- Бургер меню кнопка -->
+    <button
+      class="burger-menu-btn js-toggle-menu-btn"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Open menu"
+    >
+      <svg class="burger-menu-icon" width="32" height="32">
+        <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#burger-menu"></use>
+      </svg>
+    </button>
+
+    <!-- Оверлей для блокування кліків -->
+    <div class="overlay"></div>
+
+    <div id="mobile-menu" class="header-mobile-menu js-header-menu">
+      <button class="close-menu-btn js-toggle-menu-btn" aria-label="Close menu">
+        <svg class="close-menu-icon" width="32" height="32">
+          <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="header-nav">
+        <ul class="header-menu-list">
+          <li class="header-menu-list-item">
+            <a class="header-menu-link active" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="header-menu-list-item">
+            <a
+              class="header-menu-link "
+              href="./favorites.html"
+              >Favorites</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-socials-list">
+        <li>
+          <a
+            class="header-socials-links"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to facebook.com"
+          >
+            <svg class="header-social-icon" width="28" height="28">
+              <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-socials-links"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to instagram.com"
+          >
+            <svg class="header-social-icon" width="28" height="28">
+              <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-socials-links"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to youtube.com"
+          >
+            <svg class="header-social-icon" width="28" height="28">
+              <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero__left-block">
+        <h1 class="hero__title">
+          <svg class="hero__star" width="132" height="24" aria-label="hero icon">
+            <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#hero-star"></use>
+          </svg>
+          Get <i>Body</i> in shape, Stay healthy
+        </h1>
+        <p class="hero__text">
+          Transform your physique and embrace a healthier lifestyle with our
+          comprehensive fitness and nutrition support.
+        </p>
+      </div>
+      <div class="hero__right-block">
+        <div class="hero__women-fitness">
+          <picture class="women-images">
+            <img
+              srcset="data:image/jpeg;base64,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 1x, /vanilla-team/assets/women__fitness@2x-a97b270c.jpg 2x"
+              src="data:image/jpeg;base64,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"
+              alt="women-fitness"
+            />
+          </picture>
+        </div>
+        <div class="hero__teg-buttons__up">
+          <button class="hero__teg-button">#Sport</button>
+          <button class="hero__teg-button">#Healthy</button>
+          <button class="hero__teg-button">#Workout</button>
+          <button class="hero__teg-button">#Diet</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__women-images">
+      <picture class="women-images">
+        <source
+          media="(min-width: 1440px)"
+          srcset="/vanilla-team/assets/women__desc-06e483cf.jpg 1x, /vanilla-team/assets/women__desc@2x-88c518a4.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/vanilla-team/assets/women__tab-4ba3219b.jpg 1x, /vanilla-team/assets/women__tab@2x-a98db9fa.jpg 2x"
+        />
+        <img
+          srcset="/vanilla-team/assets/women__mob-f8561fd3.jpg 1x, /vanilla-team/assets/women__mob@2x-e4915349.jpg 2x"
+          src="/vanilla-team/assets/women__mob-f8561fd3.jpg"
+          alt="sport-women"
+        />
+      </picture>
+    </div>
+    <div class="hero__teg-buttons__bottom">
+      <button class="hero__teg-button">#Sport</button>
+      <button class="hero__teg-button">#Healthy</button>
+      <button class="hero__teg-button">#Workout</button>
+      <button class="hero__teg-button">#Diet</button>
+    </div>
+  </div>
+</section>
+
+      <div id="ratingModal" class="modal" style="display: none">
+  <div class="modal-content">
+    <svg id="closeRatingModal" class="dialog-icon-close" width="28" height="28">
+      <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#icon-close"></use>
+    </svg>
+    <h3 class="rating-title">Rating</h3>
+
+    <form id="ratingForm">
+      <div class="rating-value">
+        <span class="current-rating" id="currentRating">0.0</span>
+        <div class="stars">
+          <input type="radio" name="rating" value="5" id="star5" /><label
+            for="star5"
+            >★</label
+          >
+          <input type="radio" name="rating" value="4" id="star4" /><label
+            for="star4"
+            >★</label
+          >
+          <input type="radio" name="rating" value="3" id="star3" /><label
+            for="star3"
+            >★</label
+          >
+          <input type="radio" name="rating" value="2" id="star2" /><label
+            for="star2"
+            >★</label
+          >
+          <input type="radio" name="rating" value="1" id="star1" /><label
+            for="star1"
+            >★</label
+          >
+        </div>
+      </div>
+      <div class="input-group">
+        <!-- <label for="email"></label> -->
+        <input
+          class="input-email"
+          type="email"
+          name="email"
+          required
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          placeholder="Email"
+        />
+      </div>
+      <div class="input-group">
+        <label for="description"></label>
+        <textarea
+          id="description"
+          name="description"
+          required
+          placeholder="Your comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+  </div>
+</div>
+
+      <section class="filter-section">
+  <div class="grid-container container">
+    <div class="main-wrapper">
+      <h2 class="main-title">
+        Exercises
+        <span id="selected-category"></span>
+      </h2>
+      <div class="search-and-main-nav">
+        <div id="search-container" class="hidden">
+          <form id="search-form">
+            <label class="search-label">
+              <input type="text" id="search-input" placeholder="Search" />
+            </label>
+            <button type="submit" id="search-button">
+              <svg class="burger-menu-icon" width="18" height="18">
+                <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <button
+                type="submit"
+                class="nav-btn untreated decorated"
+                data-filter="Muscles"
+              >
+                Muscles
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                type="submit"
+                class="nav-btn untreated"
+                data-filter="Body parts"
+              >
+                Body parts
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                type="submit"
+                class="nav-btn untreated"
+                data-filter="Equipment"
+              >
+                Equipment
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="filter-wrapper">
+      <ul class="filter-list"></ul>
+      <div class="pagination-section"></div>
+    </div>
+
+    <div class="exercise-wrapper hidden">
+      <div id="exercise-list"></div>
+      <div id="loader" class="hidden">Loading...</div>
+      <div id="pagination-container"></div>
+    </div>
+
+    <div class="quote">
+  <div class="quote-icon left-icon">
+    <svg class="quote-icon" width="34" height="32">
+      <use xlink:href="/vanilla-team/assets/sprite-45ef4b9c.svg#quote"></use>
+    </svg>
+  </div>
+  <div class="quote-text-wrapper">
+    <h2 class="quote-title">Quote of the day</h2>
+  </div>
+  <div class="quote-icon right-icon">
+    <svg class="quote-icon-commas" width="20" height="20">
+      <use xlink:href="/vanilla-team/assets/sprite-45ef4b9c.svg#commas"></use>
+    </svg>
+  </div>
+</div>
+
+
+    <div class="women-section">
+      <picture class="women-picture">
+        <source
+          media="(min-width: 1440px)"
+          srcset="/vanilla-team/assets/women_des-f49a9e34.jpg 1x, /vanilla-team/assets/women_des@2x-75853674.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/vanilla-team/assets/women_pla-6f4b80e6.jpg 1x, /vanilla-team/assets/women_pla@2x-fc06f848.jpg 2x"
+        />
+        <img
+          srcset="/vanilla-team/assets/women_mob-09ce52c0.jpg 1x, /vanilla-team/assets/women_mob@2x-62f63d42.jpg 2x"
+          src="/vanilla-team/assets/women_mob-09ce52c0.jpg"
+          alt="sport-women"
+        />
+      </picture>
+    </div>
+
+    <div class="daily-time">
+      <div class="daily-wrapper">
+        <svg class="daily-icon" width="34" height="32">
+          <use xlink:href="/vanilla-team/assets/sprite-45ef4b9c.svg#gym"></use>
+        </svg>
+      </div>
+      <div class="daily-block">
+        <h2 class="daily-title">110 min</h2>
+        <p class="daily-subtitle">Daily norm of sports</p>
+        <p class="daily-text">
+          The World Health Organization recommends at least 150 minutes of
+          moderate-intensity aerobic physical activity throughout the week for
+          adults aged 18-64. However, what happens if we adjust that number to
+          110 minutes every day? While it might seem like a high number to hit,
+          dedicating 110 minutes daily to sporting activities may offer
+          unparalleled benefits to physical health, mental well-being, and
+          overall quality of life.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <button class="scrollup-btn visually-hidden" type="button">
+  <svg class="scrollup-btn-icon" aria-label="Scroll up icon">
+    <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#arrow-top-right"></use>
+  </svg>
+</button>
+
+    </main>
+
+    <footer class="footer__background">
+  <div class="footer__container container">
+    <div class="footer__left-wrap">
+      <a class="logo" id="logo" href="./index.html">
+        <svg
+          class="footer__logo logo"
+          width="132"
+          height="24"
+          aria-label="scroll down icon"
+        >
+          <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="socials__list">
+        <li>
+          <a
+            class="socials__link link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook icon"
+          >
+            <svg
+              class="socials__icon socials__icon-footer"
+              width="24"
+              height="24"
+            >
+              <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="socials__link link"
+            href="https://www.instagram.com/goitclub/"
+            aria-label="instagram icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="socials__icon socials__icon-footer"
+              width="24"
+              height="24"
+            >
+              <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="socials__link link"
+            href="https://www.youtube.com/c/GoIT"
+            aria-label="youtube icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="socials__icon socials__icon-footer"
+              width="24"
+              height="24"
+            >
+              <use href="/vanilla-team/assets/sprite-45ef4b9c.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__right-wrap">
+      <h2 class="footer__title">
+        Transforming your <span class="accent-text">body</span> shape with us
+      </h2>
+      <form class="subscribe__form">
+        <h3 class="subscribe__form-title">
+          Subscribe and learn about new exercises!
+        </h3>
+        <input
+          class="subscribe__form-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+        />
+        <button class="subscribe__form-btn" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="footer__text-outer-wrap">
+      <div>
+        <p class="footer__text">Your Energy. All rights reserved.</p>
+      </div>
+      <div class="footer__text-inner-wrap">
+        <p class="footer__text privacy-policy__text">
+          <span>Privacy Policy</span><span>&sol;</span
+          ><span>Terms of Service</span>
+        </p>
+
+        <p class="footer__text">©2024</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
